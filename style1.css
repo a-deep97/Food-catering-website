@@ -12,12 +12,16 @@
 #navbar{
     display: flex;
     align-items: center;
+
     position: relative;
+    top: 0%;
 }
 #navbar::before{
     content: "";
     background-color: black;
     position: absolute;
+    top: 0%;
+    left: 0%;
     height: 100%;
     width: 100%;
     opacity: 70%;
@@ -61,8 +65,8 @@
 #home{
     display: flex;
     flex-direction: column;
-    height: 400px;;
-    padding: 3px 200px;
+    height: 575px;;
+    padding: 3px 200px; 
     justify-content: center;
     align-items: center;
 }
@@ -73,18 +77,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 100%;
+    top: 0%;
+    left: 0%;
+    height: 670px;
     width: 100%;
-    opacity: 85%;
     z-index: -1;
+    opacity: 0.9;
 }
 #home h1{
     color: white;
     text-align: center;
-}
-.h-primary{
-    font-size: 3rem;
-    padding: 12px 12px;   
+    font-family: 'Potta One';
 }
 #home p{
     color: white;
@@ -99,4 +102,82 @@
     font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
+}
+
+/* Services  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    background-color: rgb(227 223 222);
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 170px;
+    width: 170px
+} 
+#services .box p{
+    align-items: center;
+    font-family: 'Potta One';
+    font-size: 0.8rem;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background: url('img/img4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Potta One';
+}
+#contact-box input, #contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+/* Utility classes */
+.h-primary{
+    font-size: 3.6rem;
+    padding: 12px 12px; 
+    font-family: 'Potta One';  
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Potta One';
+}
+.center{
+    text-align: center;
+}
+footer{
+    background: black;
+    color: white;
 }

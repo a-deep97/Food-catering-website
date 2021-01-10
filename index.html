@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to BearFood.com </title>
     <link rel="stylesheet" href="style1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navbar">
@@ -20,19 +21,58 @@
         </ul>
     </nav>
     <section id="home">
-        <h1 class="h-primary">Wel come to bearFood</h1>
+        <h1 class="h-primary">Welcome to bearFood</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quis, placeat consequatur ad iusto provident esse illo magnam mollitia, porro inventore exercitationem fugiat sequi sit tenetur accusantium, ratione molestiae facere. Eos voluptatem unde aut.</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, obcaecati. Eius repellat animi in cupiditate consequatur eveniet vel, voluptate accusantium nesciunt minus libero obcaecati, fugit eligendi possimus dignissimos repellendus itaque tenetur excepturi ad odio.</p>
         <button class="btn">Order Now</button>
     </section>
-    <section class="services-container">
+    <section id="services-container">
         <h1 class="h-primary center">Our Services</h1>
-        <div class="services"></div>
+        <div id="services">
             <div class="box">
                 <img src="img/img3.jpg">
                 <h2 class="h-secondary center">Food Ordering</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat vitae harum ipsam alias quas ut aperiam blanditiis. Accusamus, autem ab voluptate assumenda voluptatum ipsum deserunt vel distinctio magnam consequatur. Fugit, optio. Corporis, deserunt.</p>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat vitae harum ipsam alias quas ut aperiam blanditiis. Accusamus, autem ab voluptate assumenda voluptatum ipsum deserunt vel distinctio magnam consequatur. Fugit, optio. Corporis, deserunt.</p>
             </div>
-    </section>    
+            <div class="box">
+                <img src="img/img3.jpg">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat vitae harum ipsam alias quas ut aperiam blanditiis. Accusamus, autem ab voluptate assumenda voluptatum ipsum deserunt vel distinctio magnam consequatur. Fugit, optio. Corporis, deserunt.</p>
+            </div>
+            <div class="box">
+                <img src="img/img3.jpg">
+                <h2 class="h-secondary center">Bulk odering</h2>
+                <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugiat vitae harum ipsam alias quas ut aperiam blanditiis. Accusamus, autem ab voluptate assumenda voluptatum ipsum deserunt vel distinctio magnam consequatur. Fugit, optio. Corporis, deserunt.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="text" name="phone" id="phone" placeholder="Your Phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.BearFood.com. All rights reserved.
+        </div>
+    </footer>     
 </body>
 </html>
